@@ -1,0 +1,10 @@
+text-align:
+1. center:căn giữa theo chiều ngang
+2. justify: căn đều 2 bên (word)
+3. left
+4. right
+
+text-transform:
+1. uppercase: in hoa
+2. lowercase: in thường
+3. capitalize: Viết hoa chữ cái đầu các chữ

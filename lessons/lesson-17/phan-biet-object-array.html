@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân biệt khai báo, sử dụng for cho array, object</title>
+</head>
+<body>
+    <h2>Giống:</h2>
+    <ul>
+        <li>Khai báo: dùng var</li>
+        <li>Đều dùng for( key in TENBIEN )</li>
+    </ul>
+    <h2>Khác:</h2>
+    <ul>
+        <li>Array dùng được cho cả 2 for-in, for-of, console</li>
+        <li>Object thì chỉ dùng được for-in</li>
+    </ul>
+    <script>
+        var list = [
+            {
+                name: "Hà",
+                age: 18
+            },
+            {
+                name: "Huy",
+                age: 19
+            },
+            {
+                name: "Hương",
+                age: 20
+            }
+        ]
+        var object = {
+            name: "Hải",
+            age: 21
+        };
+        var array = ["123","124"];
+        // for( item of array){
+        //     console.log(item);
+        // }
+        // delete object.age;
+        for(key in object){
+            console.log(key);
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+* Cách thêm 1 key mới vào object:
+tenObject.tenKey = value;
+tenObject["key"] = value;
+
+* Cách xóa 1 key khỏi Object:
+delete tenObject.tenkey;
+

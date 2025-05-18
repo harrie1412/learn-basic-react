@@ -1,0 +1,4 @@
+Các bước sử dụng CSS trong ReactJS:
+Bước 1: Tạo 1 file CSS ở cùng cấp với component.
+Bước 2: Nhúng file CSS đó vào trong component bằng cú pháp: import "./TenFile.css";
+Ví dụ: Lấy ví dụ phần 2 để CSS lại cho đẹp.

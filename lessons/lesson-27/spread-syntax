@@ -1,0 +1,20 @@
+Spread syntax (Cú pháp trải ra) là một phép lặp lại các phần tử của mảng (array) hoặc đối tượng (object).
+Được thể hiện dưới dạng dấu ba chấm: …
+    Vd: dùng để nối 2 thông tin object
+    ; var object = {
+    ;         name: "Khánh Hà",
+    ;         age: 18
+    ;     }
+    ;     var updateObject = {
+    ;         email: "nguyenha2005010@gmail.com",
+    ;         sdt: "0123456789"
+    ;     }
+    ;     var info = {
+    ;         ...object,
+    ;         ...updateObject
+    ;     }
+    ;     console.log(info);
+
+    Vd: trải thông tin
+    ; let numbers = [1,2,3,4,5];
+    ;     console.log(...numbers);

@@ -1,0 +1,10 @@
+Cú pháp:
+@if ($dieukien1) {
+    // code
+}
+@else if ($dieukien2) {
+    // code
+}
+@else {
+    // code
+}

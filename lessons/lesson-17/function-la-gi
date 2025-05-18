@@ -1,0 +1,6 @@
+Chia 2 loại:
+- Hàm có sẵn (built-in): alert, console.log,.
+- Hàm tự định nghĩa: tự xây dựng
+Vd: function tenHam(tham số 1, tham số 2, ...){
+  return..
+}

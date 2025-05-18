@@ -1,0 +1,4 @@
+Cú pháp: $name : value;
+Trong đó:
+$name: tên biến.
+value: giá trị của biến.

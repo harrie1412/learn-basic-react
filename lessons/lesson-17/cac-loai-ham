@@ -1,0 +1,19 @@
+1. Declaration function(Hàm tự định nghĩa): cho phép khai báo hàm sau khi sử dụng
+Vd: function tenHam(thamSo1, thamSo2,...) {
+	    // Code
+	}
+
+2. Expression function(Hàm biểu thức): phải khai báo hàm trước khi sử dụng
+Vd:
+var tenHam = function(thamSo1, thamSo2,...) {
+	    // Code
+	}
+--> sử dụng: var s = tenHam(thamSo1, thamSo2,...);
+
+3. Arrow function(Hàm mũi tên): không cho phép sử dụng mà chưa khai báo, định nghĩa
+Vd:
+var tenHam = (thamSo1, thamSo2,...) => { không có function, thêm =>
+	    // Code
+	}
+* Không cho dùng Arguments, cho dùng spread
+

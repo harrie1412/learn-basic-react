@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-html</title>
+</head>
+<body>
+    <h1>
+        <span>Đây là nội dung thẻ span</span>
+        <span>Đây là nội dung thẻ span</span>
+        <span>Đây là nội dung thẻ span</span>
+    </h1>
+    <h2 type-id="abc">Đây là nội dung h2</h2>
+
+    <div class="box" box-id="b-001">
+        Box-001
+    </div>
+    <div class="box" box-id="b-002">
+        Box-002
+    </div>
+    <script>
+        // var box = document.querySelector("h1");
+        // console.log(box);
+        // textHTML = box.innerHTML;
+        // console.log(textHTML);//nội dung h1
+
+        // var textContent = box.textContent;//mất tên thẻ, giữ nguyên khoảng cách
+        // console.log(textContent);
+
+        // var innerText = box.innerText;
+        // console.log(innerText); //thu hẹp khoảng cách, mất tên thẻ
+    </script>
+
+    <script>
+        // var box = document.querySelector("h2");
+        // var textHTML = box.innerHTML = "text mới của h2";
+        // console.log(textHTML);
+    </script>
+
+    <script>
+        // var list = document.querySelectorAll(".box");
+        // console.log(list);// vì là mảng box nên phải dùng forEach
+        // [...list].forEach(item => {
+        //     var attr = item.getAttribute("box-id");
+        //     console.log(attr);
+        // });
+    </script>
+
+    <script>
+        // var item = document.querySelector("h2");
+        // console.log(item.getAttribute("type-id"));
+    </script>
+
+    <script>
+        var list = document.querySelectorAll(".box");
+        console.log(list);// vì là mảng box nên phải dùng forEach
+        [...list].forEach(item => {
+            item.setAttribute("box-id", "001-b");
+            console.log(item);
+        });
+    </script>
+</body>
+</html>

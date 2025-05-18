@@ -1,0 +1,24 @@
+* Khái niệm:
+1. useState giúp "cập nhật lại trạng thái" của dữ liệu (hay cập nhật lại giá trị của dữ liệu).
+2. Khi dữ liệu thay đổi thì giao diện được cập nhật lại theo dữ liệu mới.
+3. Một vài ví dụ trong thực tế:
+- Bóng đèn có 2 trạng thái là bật hoặc tắt.
+- Trạng thái đã đăng nhập hoặc chưa đăng nhập vào tài khoản.
+- Khi tăng số lượng sản phẩm thì tổng tiền được cập nhật lại.
+
+* Cú pháp:
+import { useState } from "react";
+function Component() {
+	const [state, setState] = useState(initialStateValue);
+	// Code
+}
+export default Component;
+Trong đó:
+state: là tên biến của state.
+setState: là một function dùng để cập nhật state.
+initialStateValue: là giá trị khởi tạo (ban đầu) của state, chỉ dùng 1 lần.
+
+* Lưu ý:
+=> Khi nào áp dụng?
+1. cần tác động vật lí(click,change,blur,...) vào màn hình
+2. ảnh hưởng đến giá trị dữ liệu (số học, text,...) ban đầu

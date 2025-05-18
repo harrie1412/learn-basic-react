@@ -1,0 +1,5 @@
+overflow:
+1. visible: chiều cao box không đủ chứa text, cho phép tràn
+2. hidden: không cho phép tràn
+3. scroll: xuất hiện thanh scroll khi text tràn hoặc không
+4. auto:xuất hiện thanh scroll khi text tràn

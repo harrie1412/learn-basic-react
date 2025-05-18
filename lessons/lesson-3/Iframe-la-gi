@@ -1,0 +1,3 @@
+Thẻ Iframe: hiển thị thông tin 1 trang web
+Cú pháp: <iframe src="url" title="description" height="200" width="300"></iframe>
+Ví dụ: <iframe src="https://www.google.com/maps/place/Vi%E1%BB%87t+Nam/data=!4m2!3m1!1s0x31157a4d736a1e5f:0xb03bb0c9e2fe62be?sa=X&ved=1t:242&ictx=111" width="600" height="450" title="Bản đồ Việt Nam" frameborder="0"></iframe>

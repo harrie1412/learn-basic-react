@@ -1,0 +1,8 @@
+Cú pháp Export:
+export const functionName = () => {
+  /* Code */
+}
+Cú pháp Import:
+import { functionName } from "./file_export.js";
+Hoặc:
+import * as functionName from "./file_export.js";

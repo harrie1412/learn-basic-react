@@ -1,0 +1,4 @@
+- Placeholder dùng để kết hợp với extend để bỏ đi những phần select không cần thiết khi biên dịch. (Thêm dấu % ở trước)
+- Dùng khi class đó định nghĩa chung cho nhiều class kia khác nhưng không được dùng chính thức ở html. Trong css: class-kia, class-kia{
+    css của class-đó
+}

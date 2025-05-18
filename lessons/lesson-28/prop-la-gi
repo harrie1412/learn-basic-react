@@ -1,0 +1,7 @@
+Props là một "object" được truyền vào trong một component.
+Props cho phép chúng ta giao tiếp giữa các components với nhau bằng cách truyền tham số qua lại giữa các components.
+Khi một components cha truyền cho component con một props thì components con chỉ có thể đọc và không có quyền chỉnh sửa nó bên phía components cha.
+Cách truyền một props cũng giống như cách mà bạn thêm một attributes cho một element HTML.
+Props có thể nhận giá trị là tất cả các kiểu dữ liệu:
+Kiểu dữ liệu nguyên thủy: String, Number, Boolean, Undefined, Null, Symbol
+Kiểu dữ liệu phức tạp: Function, Object (Object, Array)

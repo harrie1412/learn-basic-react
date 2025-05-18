@@ -1,0 +1,14 @@
+*Loại font:
+1. Serif: chữ có chân (Time new roman)
+2. San-serif: không có chân
+
+*Font-family:
+1. Mục linh<>: vào gg font, select các font thích, save mã nhúng (link<>)
+2. Mục @import:  vào gg font, select các font thích, save mã nhúng (import ở file style)
+
+*font-style:
+1. normal
+2. italic
+3. oblique: in nghiêng nhưng ít hơn italic
+
+*font-weight: độ đậm

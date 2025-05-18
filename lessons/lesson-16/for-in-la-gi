@@ -1,0 +1,11 @@
+// Chuyên lấy key từ đối tượng object: 
+var a = {
+    name: "Hà",
+    age: 18
+};
+
+for(key in a){
+    console.log(key, a[key]);
+    console.log(key);
+}
+

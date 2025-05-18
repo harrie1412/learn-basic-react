@@ -1,0 +1,3 @@
+if(điều kiện):
+1. Số khác 0: true
+2. Null, Rỗng, 0: false

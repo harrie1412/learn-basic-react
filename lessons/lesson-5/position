@@ -1,0 +1,5 @@
+1. static: không di chuyển left right botton top được
+2. relative: thẻ cha cố định cho absolute, cho phép di chuyển 4 hướng
+3. absolute: cho phép di chuyển 4 hướng dựa thẻ cha làm gốc
+4. fixed(các nút nổi): di chuyển theo 4 hướng nhưng cố định tại vị trí khi scroll
+5. sticky(dùng làm header): di chuyển 4 hướng, scroll tới vị trí đang đứng thì giữ nguyên không scroll qua

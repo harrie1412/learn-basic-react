@@ -1,0 +1,15 @@
+* toàn cục:
+:root{
+    --den: #000;
+    --trắng: #fff;
+}
+h1{
+    color:var(trắng);
+}
+
+
+*Cục bộ:
+h2{
+    --xanhnhat: #28fe79;
+    color: var(xanhnhat);
+}

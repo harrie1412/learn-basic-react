@@ -1,0 +1,12 @@
+Inline(nội tuyến-trong hàng)
+1. Không bắt đầu dòng mới
+2. Chiều rộng thẻ bằng chiều rộng của phần tử element đó
+3. Một số thẻ inline:
+<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>,
+<em>, <i>, <img>, <input>, <kbd>, <label>, <map>, <object>, <output>, <q>,
+<samp>, <script>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>,
+<time>, <tt>, <var>.
+
+4. Phần tử cấp độ inline không chứa phần tử cấp độ block
+5. Inline chỉ chứa các phần tử inline hoặc data
+6. Đặc biệt thẻ a (inline) có thể chứa kiểu block.

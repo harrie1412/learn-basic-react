@@ -1,0 +1,33 @@
+* Các cách gọi ra thẻ Element:
+1. bien.classList.add("tên class"): Thêm class mới vào element bằng id
+    Vd:
+    let box = document.getElementById("box");
+    //     console.log(box);
+    //     box.classList.add("dark");
+
+2. bien[i].classList.add("tên thẻ"): Thêm class mới cho thẻ thứ i
+    Vd:
+    var element = document.getElementsByTagName("h3");
+    //     console.log(element);
+    //     element[3].classList.add("dark");
+
+3. document.getElementsByClassName("tên class"); : lấy ra nhiều thẻ cùng 1 class
+    var element = document.getElementsByClassName("h");
+        // // console.log(element);
+        // console.log(...element);
+        // [...element].forEach(item =>{
+        //     item.classList.add("yellow");
+        //     item.classList.remove("h");
+        // } );
+
+4. document.querySelector("lệnh query selector"); : lấy ra thẻ đầu tiên tìm được
+    Vd:
+    // var selectorQuery = document.querySelector(".box-1 .box-2 ul li");
+        // console.log(selectorQuery);
+        // selectorQuery.classList.add("active");//chỉ css được cho thẻ đầu tiên tìm được
+
+5. document.querySelectorAll("lệnh query selector"); : lấy tất cả thẻ tìm được
+    Vd:
+    // var selectorQuery = document.querySelectorAll(".box-1 .box-2 ul li");
+    //     console.log(selectorQuery);
+    //     [...selectorQuery].forEach(item => item.classList.add("active"));

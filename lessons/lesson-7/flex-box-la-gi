@@ -1,0 +1,43 @@
+Là flex
+
+*Flex-dicrection: xác định hướng main-asix để container sắp xếp lại item
+1. row: sắp xếp theo chiều ngang
+2. row-reverse: sắp xếp theo chiều ngang, phần tử đảo ngược: từ phải -> trái
+3. column: sx theo chiều dọc
+4. column-reverse: chiều dọc mà đỏa ngược
+
+*Flex-wrap: cho phép tự động xuống dòng khi container thay đổi kích thước
+1. nowrap (mặc định): item luôn nằm trên 1 dòng
+2.wrap: cho phép xống dòng
+3. wrap-reverse (ngược lại wrap): nhảy lên trên. Vd: 7 8 1 2 3 4 5 6
+
+* Justify-content: căn lề theo trục ngang(main-asix)
+1. flex-start
+2. flex-end
+3. center
+4. space-between: item đầu, cuối sát lề ngang
+5. space-around: khoảng cách giữa lề ngang = 1/2 khoảng cách 2 item
+6. space-evenly: kc lề ngang = kc item
+
+* Align-item: theo trục dọc, áp dụng cho conntainer, so với 1 DÒNG
+1. stretch: item tăng chiều cao theo container( khi xét k có height, ưu tiên nghe lời height)
+2. flex-start: đưa item lên đầu
+3. flex-end: đưa item lên đuôi của từng hàng
+4. center: căn giữa
+
+* Align-content: điều chỉnh vị trí ban đầu, theo chiều dọc, áp dụng NHIỀU DÒNG
+1. stretch:
+2. flex-start: tất cả các hàng của từng dòng lên trên
+3. flex-end: tất cả các hàng của từng dòng lên xuống dưới
+4. space-between: item đầu, cuối sát lề dọc
+5. space-around: khoảng cách giữa lề dọc = 1/2 khoảng cách 2 item
+6. space-evenly: kc lề dọc = kc item
+
+*Align-sefl: căn theo dọc
+1. stretch
+2. flex-start:
+3. flex-end:
+
+*Order: sắp xếp lại vị trí các item
+vd: ban đầu vị trí là 1 2 3
+--> sau: tăng order lên 1 cho 1: 2 3 1

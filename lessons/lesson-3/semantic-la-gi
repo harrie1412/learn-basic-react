@@ -1,0 +1,14 @@
+Semantic: ngữ nghĩa. Thẻ có ý nghĩa giống với tên Thẻ
+Ví dụ:
+<article>: Xác định nội dung độc lập, khép kín
+<aside>: Xác định nội dung ngoài nội dung trang
+<details>: Xác định các chi tiết bổ sung mà người dùng có thể xem hoặc ẩn
+<summary>: Xác định tiêu đề hiển thị cho phần tử <details>
+<figcaption>: Xác định chú thích cho phần tử <figure>
+<figure>: Chỉ định nội dung độc lập, như hình minh họa, sơ đồ, ảnh, danh sách mã, v.v.
+<header>: Chỉ định tiêu đề cho một tài liệu hoặc section
+<footer>: Xác định chân trang cho tài liệu hoặc section
+<main>: Chỉ định nội dung chính của một tài liệu
+<mark>: Xác định văn bản được đánh dấu / nhấn mạnh
+<nav> (navigation - dẫn đường): Xác định các liên kết điều hướng
+<section>: Xác định một phần trong tài liệu

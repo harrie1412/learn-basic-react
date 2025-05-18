@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-element</title>
+    <style>
+        .light{
+            background-color: lightcoral;
+        }
+        .dark{
+            background-color: coral;
+            color: white;
+        }
+        .green{
+            color: green;
+        }
+        .font30{
+            font-size: 25px;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .box-1 .box-2 ul li{
+            color: red;
+        }
+        .box-1 .box-2 ul li.active{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="light"  id="box">Thẻ h1 nè</div>
+    <a href="#">Trang facebook</a>
+    <ul class="green" id="box1">
+        <li>Thẻ li</li>
+        <li>Thẻ li</li>
+        <li>Thẻ li</li>
+    </ul>
+    <h3>Thẻ h3 00</h3>
+    <h3>Thẻ h3 01</h3>
+    <h3>Thẻ h3 02</h3>
+    <h3>Thẻ h3 03</h3>
+
+
+
+    <h1 class="h">Thẻ h1</h1>
+    <h2 class="h">Thẻ h2</h2>
+    <h3 class="h">Thẻ h3</h3>
+    <h4 class="h">Thẻ h4</h4>
+
+
+    <div class="box-1">
+        <div class="box-2">
+            <ul>
+                <li>Nguyễn</li>
+                <li>Khánh</li>
+                <li>Hà</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // console.log(document);
+    </script>
+
+    <script>
+        // let div = document.getElementById("box");
+        // div.classList.add("dark");
+
+        // let box1 = document.getElementById("box1");
+        // console.log(box1);
+        // box1.classList.add("light", "font30");
+    </script>
+
+    <script>
+        // var element = document.getElementsByTagName("h3");
+        // console.log(element);
+        // element[3].classList.add("dark");
+    </script>
+
+    <script>
+        // var element = document.getElementsByClassName("h");
+        // // console.log(element);
+        // console.log(...element);
+        // [...element].forEach(item =>{
+        //     item.classList.add("yellow");
+        //     item.classList.remove("h");
+        // } );
+    </script>
+
+    <script>
+        // var selectorQuery = document.querySelector(".box-1 .box-2 ul li");
+        // console.log(selectorQuery);
+        // selectorQuery.classList.add("active");//chỉ css được cho thẻ đầu tiên tìm được
+    </script>
+
+    <script>
+        // var selectorQuery = document.querySelectorAll(".box-1 .box-2 ul li");
+        // console.log(selectorQuery);
+        // [...selectorQuery].forEach(item => item.classList.add("active"));
+    </script>
+</body>
+</html>

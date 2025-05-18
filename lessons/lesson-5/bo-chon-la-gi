@@ -1,0 +1,28 @@
+class1 > class2: css cho các class2 là con cấp 1 của class1
+class1 ~ class2: css cho các class2 nằm sau, cùng cấp class1
+class1 + class2: css cho 1 class2 cùng cấp nằm sau class1
+class1 class2: css cho các class2 là con của class1
+
+
+* Bộ chọn lớp giả: pseudo <1 class chỉ được dùng 1 pseudo>
+1. ::before: Chèn nội dung nào đó trước nội dung của mỗi element. (Phải thêm content: "";)
+2. ::after: Chèn nội dung nào đó sau nội dung của mỗi element. (Phải thêm content: "";)
+3. ::first-letter: Chọn chữ cái đầu tiên của mỗi element.
+4. ::first-line: Chọn dòng đầu tiên của mỗi element.
+5. ::marker: Chọn các điểm đánh dấu của các mục danh sách (thẻ <ul> và <ol>)
+6. ::selection: Được dùng để style cho một vùng văn bản được người dùng chọn (hay còn gọi là "bôi đen"). Chỉ có một số thuộc tính css khả dụng với ::selection là color, background, cursor, và outline.
+
+
+* Bộ chọn lớp giả phổ biến
+1. :link: khi liên kết chưa được truy cập lần nào. (Chỉ dùng cho thẻ a)
+2. :visited: khi liên kết đã được truy cập sau lần đầu tiên. (Chỉ dùng cho thẻ a)
+3. :hover: khi di chuyển chuột lên element.
+4. :active: khi phần tử được click vào, áp dụng cho tất cả các thẻ.
+5. :first-child: thiết lập thuộc tính cho element đầu tiên.
+6. :last-child: thiết lập thuộc tính cho element cuối cùng.
+7. :nth-child(n): n có thể là các giá trị even (chẵn), odd (lẻ), một số, một biểu thức (an + b ).
+
+* :first-child: css cho phần tử đầu
+* :last-child: css cho phần tử cuối
+* nth-child(số,odd(lẻ),even(chẳn),2n+i): css phần tử mong muốn
+

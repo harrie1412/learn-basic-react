@@ -1,0 +1,8 @@
+1. @extend được dùng trong trường hợp bạn muốn một selector sử dụng lại những thuộc tính của selector khác.
+2. Giúp giảm trùng lặp code.
+3. Sử dụng trong trường hợp styles tĩnh.
+
+Ví dụ: trong css, khai báo thêm class sau dấu , class extend
+class đó, class kia{
+    css class đó
+}

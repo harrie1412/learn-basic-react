@@ -1,0 +1,4 @@
+*Cú pháp tạo mới:
+document.cookie = "name=value";
+
+* Tạo bằng hàm:

@@ -1,0 +1,5 @@
+- Rest parameters (Tham số "còn lại") là tham số đại diện cho những tham số không được khai báo của một function.
+- Khi sử dụng khai báo đại diện bên trong một function thì khi gọi function sẽ không giới hạn giá trị truyền vào.
+- Được ký hiệu bằng khai báo ...name (cẩn thận nhầm với spread syntax - dùng trong array và object).
+
+=> Giống như spread syntax nhưng chỉ lấy các gtri đưa vào hàm mà thiếu khi truyền

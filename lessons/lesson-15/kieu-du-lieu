@@ -1,0 +1,28 @@
+* Nguyên thủy:
+Number, String, Boolean, Null, Underfined, Symbol
+
+*Number:
+1. Số thực
+2. Số Nguyên
+3. Infinity: dương vô cùng
+4. -Infinity: âm vô cùng
+5. NaN: Not A Number
+
+*Array: mảng
+// var abc = [ /* list number */
+//     a = 1,
+//     b = 2,
+//     c = 3
+// ];
+
+
+var abc = [ /* list object */
+    {   name: "A",
+        a = 1
+    },
+    {   name: "B",
+        a = 2
+    },{   name: "C",
+        a = 3
+    }
+];

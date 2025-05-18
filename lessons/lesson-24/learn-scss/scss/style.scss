@@ -1,0 +1,108 @@
+@import "mixins";
+@import "variable";
+.button{
+    @extend %button--border;
+    padding: 15px 30px;
+    @include border-radius(50px);
+    border: none;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.button--red{
+    @extend .button;
+    @extend %button--border;
+    background-color: $color-red;
+    color: $color-white;
+}
+.button--green{
+    @extend %button--border;
+    background-color: $color-green;
+    color: $color-white;
+}
+
+%button--border{
+    border: 1px solid $color-black;
+}
+
+
+.pagination{
+    list-style: none;
+    @include display-flex;
+    @include flex-wrap;
+    font-size: 30px;
+    &__item{
+        margin-left: 10px;
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-gray;
+        &:hover{
+            color: $color-red;
+        }
+    }
+    &__item--active &__link{
+        color: $color-green;
+    }
+    &__item--disable &__link{
+        cursor: no-drop;
+    }
+}
+
+.box{
+    list-style: none;
+    font-size: 25px;
+    background-color: yellow;
+    height: 500px;
+    padding:0;
+    position: relative;
+    @include border-radius(15px);
+    &__item{
+        background-color: orange;
+        padding: 20px 40px;
+        @include border-radius(10px);
+        margin: 10px;
+        &--one{
+            @include position-absolute("top-left", 10px, 10px);
+        }
+        &--two{
+            @include position-absolute("top-right", 20px, 20px);
+        }
+        &--three{
+            @include position-absolute("left-bottom", 30px, 30px);
+        }
+        &--four{
+            @include position-absolute("right-bottom", 40px, 40px);
+        }
+    }
+}
+
+// @for $i from 0 through 10{
+//     .opacity-#{$i}{
+//         opacity: 0.1*$i;
+//     }
+// }
+
+$i:0;
+$max:10;
+@while $i <= $max {
+    .opacity-#{$i}{
+        opacity: 0.1 * $i;
+    }
+    $i : $i + 1;
+}
+
+$colors: (red,tomato), (orange, yellow);
+@each $label,$color in $colors{
+    .button--#{$label}{
+        background-color: $color;
+    }
+}
+
+@function sum($a,$b){
+    @return ($a+$b);
+}
+
+.button{
+    padding: sum(100,100)+px;
+}

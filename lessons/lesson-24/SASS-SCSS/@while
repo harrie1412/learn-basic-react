@@ -1,0 +1,8 @@
+$i:0;
+$max:10;
+@while $i <= $max {
+    .opacity-#{$i}{
+        opacity: 0.1 * $i;
+    }
+    $i : $i + 1;
+}

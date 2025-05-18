@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam-table</title>
+    <style>
+        table, td,th{
+            border: solid  #000 1px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; gap:100px">
+        <table>
+            <tr>
+                <th>Level1</th>
+                <th>Level2</th>
+                <th>Level3</th>
+                <th>Info</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td rowspan="6"> System</td>
+                <td rowspan="4">System Apps</td>
+                <td rowspan="3">System Env</td>
+                <td>App Test</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App Memory</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App Test</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td>SystemEnv2</td>
+                <td>App Test</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td rowspan="2">System Memory</td>
+                <td rowspan="2">System Test</td>
+                <td>Memory Func</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>Apes Test</td>
+                <td>foo</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th rowspan="11">TCB</th>
+                <th>Order no:</th>
+                <th colspan="3">#ABC001</th>
+            </tr>
+            <tr>
+                <th>Order Date:</th>
+                <td colspan="3">23-Mar-2016</td>
+            </tr>
+            <tr>
+                <th colspan="4">Customer</th>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td colspan="3">John Papas</td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td colspan="3">Independence Day 5th str, 11511</td>
+            </tr>
+            <tr>
+                <th colspan="4">Order Details</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Of Mice and Men</td>
+                <td>Book</td>
+                <td>10.00E</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Of Mice and Men</td>
+                <td>Book</td>
+                <td>10.00E</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Of Mice and Men</td>
+                <td>Book</td>
+                <td>10.00E</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Of Mice and Men</td>
+                <td>Book</td>
+                <td>10.00E</td>
+            </tr>
+            <tr>
+                <th colspan="3">Total:</th>
+                <td>272.00E</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

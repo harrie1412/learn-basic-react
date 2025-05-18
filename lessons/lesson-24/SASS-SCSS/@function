@@ -1,0 +1,17 @@
+Hàm trong SCSS "luôn trả về một giá trị"
+Trong @function phải có @return
+Cú pháp khai báo:
+@function function_name($var1, $var2, ...) {
+    @return value;
+}
+Cú pháp gọi hàm:
+function_name($val1, $val2, ...)
+
+Ví dụ:
+@function sum($a,$b){
+    @return ($a+$b);
+}
+
+.button{
+    padding: sum(100,100)+px;
+}

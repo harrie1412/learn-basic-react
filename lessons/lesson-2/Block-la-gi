@@ -1,0 +1,10 @@
+Block là gì?
+1. Chiếm hết chiều rộng
+2. Bắt đầu ở dòng mới
+3. Một số thẻ block:
+<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>,
+<figcaption>, <figure>, <footer>, <form>, <h1> - <h6>, <header>, <hr>, <li>, <main>, <nav>,
+<noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>.
+
+4. Có thể chứa phần tử inline, block, dữ liệu.
+5. Đặc biệt thẻ a (inline) có thể chứa kiểu block.

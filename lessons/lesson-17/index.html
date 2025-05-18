@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function tinhTong(a, b, c, d){
+        //     return (a+b+c+d);
+        // }
+        // let tong = tinhTong(1,2,3,4);
+        // console.log(tong);
+
+        // function tinhTong(){
+        //     console.log(arguments);
+        //     let tong = 0;
+        //     for(item of arguments){
+        //         tong+=item;
+        //     }
+        //     return tong;
+        // }
+        // function tinhTong(){
+        //     console.log(arguments);
+        //     let tong = 0;
+        //     return tong;
+        // }
+        // let tong = tinhTong(1,2,3,4);
+        // console.log(tong);
+
+
+        // function tinhTong(){
+        //     console.log("Hàm tính tổng");
+        //     function tinhHieu(){
+        //         console.log("Hàm tính hiệu");
+        //     }
+        //     tinhHieu();
+        // }
+        // tinhTong();
+
+
+        // Argument
+        var tinhTong = (...number)=>{
+            var sum = 0;
+            console.log(number);
+            for(item of number){
+                sum += item;
+            }
+            return sum;
+        }
+        let tong = tinhTong(1,2,3,4);
+        console.log(tong);
+    </script>
+</body>
+</html>

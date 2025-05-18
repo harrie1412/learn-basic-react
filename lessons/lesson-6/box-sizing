@@ -1,0 +1,4 @@
+mặc định dùng width, height: chỉ áp dụng cho content
+box-sizing: dùng để bó buộc element đúng kích thước width-height đề ra
+1. content-box: trạng thái mặc định, cho phép tăng dài rộng phần ::content
+2. border-box: tăng width-height tính cho cả box(border,padding,content)

@@ -1,0 +1,30 @@
+* Khái niệm:
+- NPM viết tắt của Node Package Manager.
+- Là một công cụ tạo và quản lý các "thư viện lập trình Javascript" cho Node.js.("Chỉ chuyên các thư viện JavaScript")
+- Trường hợp không sử dụng NPM, bạn sẽ cần tải toàn bộ các thư viện một cách thủ công tay. Sau đó, bạn cần thực hiện nhúng thư viện vào chính dự án của mình. Điều này làm mất nhiều thời gian hơn để hoàn thành. Còn khi áp dụng NPM, bạn chỉ cần 1 dòng lệnh hoàn tất công việc lưu thư viện.
+- Link website: https://www.npmjs.com/
+- Ưu điểm: thay vì phải thêm bằng cách import, thêm file css thì dùng npm để quản lí các thư viện hiện có, cài đặt dễ hiểu
+- Nhược điểm: chỉ phù hợp khi add thư viện JavaScript trên npm
+
+* Cách sử dụng cho tạo dự án đầu tiên mới
+Bước 1: Gõ lệnh npm -v trên cmd để kiểm tra xem cài đặt thành công chưa (Npm được tích hợp sẵn trong nodejs, nên chỉ cần cài đặt nodejs là được, nếu chưa cài đặt thì vào trang https://nodejs.org/en/).
+Bước 2: Gõ lệnh npm init, sau đó cứ bấm enter đến hết.
+Nếu là project mới cần chạy câu lệnh này. Câu lệnh này sẽ tạo ra 1 file có tên là package.json – file này để lưu trữ thông tin (tên package, phiên bản, các dependencies) mà project của bạn sử dụng.
+Bước 3: Gõ lệnh npm install [tên package] hoặc npm i [tên package]. Để cài đặt package vào dự án.
+
+* Các thuộc tính trong package.json
+- name: tên gói thư viện
+- version: phiên bản gói
+- description: phần mô tả về gói thư viện
+- homepage: trang chủ của gói
+- author: tác giả
+- contributors: tên người đóng góp cho package
+- dependencies: danh sách các gói phụ thuộc, tự động được cài theo.
+- repository: loại repository và url của package, thông thường là git (Xem thêm Git là gì?)
+- main: index.js
+- keywords: các từ khóa
+
+* Các câu lệnh khác
+1. npm update [tên_package]: Để update package. Hạn chế dùng, chỉ dùng khi thực sự hiểu về package muốn update.
+2. npm uninstall [tên_package]: Gỡ cài đặt package.
+

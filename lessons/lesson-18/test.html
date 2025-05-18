@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openTab()">Mở tab</button>
+    <button onclick="closeTab()">Đóng tab</button>
+    <button onclick="reloadTab()">Reload tab</button>
+    <script>
+        let tab;
+        function openTab(){
+            tab = window.open("https://www.youtube.com/", "_blank", "width=1200, height=800, top=200,left=200");
+        }
+
+        function closeTab(){
+            tab.close();
+        }
+
+        function reloadTab(){
+            window.close();
+        }
+        let href = window.location.href;
+        let widthScreen = window.innerWidth;
+        let heightScreen = window.innerHeight;
+        console.log(widthScreen, heightScreen);
+        console.log(href);
+        // console.log(window.location);
+        document.cookie = 'email=nguyenha2005010@gmail.com; expires=Thu, 05 Jan 2026 00:00:00';
+        function set(cname,cvalue, exdays){
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        set("name", "Khánh Hà", 1);
+        var a = document.cookie;
+        console.log(a);
+        
+    </script>
+</body>
+</html>

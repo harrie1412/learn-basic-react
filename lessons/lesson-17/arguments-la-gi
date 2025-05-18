@@ -1,0 +1,7 @@
+* chỉ dùng được ở trong hàm.
+*Giả sử khi gọi hàm và truyền đối số vào thì tất các các đối số đó sẽ được nằm trong arguments dưới dạng một mảng.
+Từ khóa return: sẽ trả về kết quả nằm ở bên phải của chữ return. Những dòng code ở bên dưới return sẽ không hoạt động.
+Lưu ý:
+1. Nếu đặt trùng tên hàm khi ta gọi hàm thì việc gọi hàm này sẽ chạy vào hàm cuối cùng.
+2. Nếu một biến được định nghĩa ở trong function thì biến đó chỉ sử dụng được ở trong function đó thôi (Kể cả biến var). Nhưng khai báo biến var trong if else thì bên ngoài vẫn gọi được.
+3. Nếu hàm A nằm trong hàm B thì hàm A chỉ gọi được ở trong hàm B thôi, không gọi được ở bên ngoài hàm B.

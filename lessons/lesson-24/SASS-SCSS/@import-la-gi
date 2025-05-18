@@ -1,0 +1,3 @@
+Cú pháp đặt tên file: _tenFile.scss
+Cú pháp import file: @import "tenFile";
+(Đặt tên file sẽ có dạng dấu gạch dưới ở trước tên file _name.scss. Khi biên dịch thì file có dấu gạch _ sẽ không được biên dịch).

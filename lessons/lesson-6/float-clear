@@ -1,0 +1,8 @@
+clear: dùng trả lại vị trí ban đầu class chứa nó, không cho bị tràn class khác
+1. both
+2. left
+3. right
+
+* float: dùng di chuyển element
+1. left
+2. right

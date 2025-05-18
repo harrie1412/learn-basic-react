@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            background-color: lightseagreen;
+            padding: 60px 30px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .box::before{
+            content: "";
+            display: block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgb(0, 117, 128);
+            position: absolute;
+            top: 20px;
+            left:20px;
+            opacity: 0.5;
+        }
+        .box::after{
+            content: "";
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(0, 117, 128);
+            position: absolute;
+            bottom: -80px;
+            right:-50px;
+            opacity: 0.5;
+        }
+        .box .content{
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+        .box .content::first-letter{
+            font-size: 30px;
+        }
+        .box .content::first-line{
+            text-transform: uppercase;
+        } */
+         *{
+            box-sizing: border-box;
+         }
+        .box{
+            background-color: #ddd;
+            margin: 5px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .sidebar-1{
+            width: 25%;
+            float: left;
+        }
+        .acticle{
+            float: left;
+            width: calc(50% - 30px);
+        }
+        .sidebar-2{
+            width: 25%;
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quibusdam est corrupti atque blanditiis dignissimos totam error expedita laboriosam placeat, dolor aperiam tempora modi ut nemo esse! Magnam, ullam sit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, tenetur vero quasi quae doloremque, quisquam maxime ex laborum aperiam voluptates velit rerum soluta quos facilis minus neque voluptate voluptatum nulla.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nesciunt eaque necessitatibus. Illo quasi possimus laboriosam, itaque ipsum vero beatae eveniet eligendi reiciendis velit recusandae cupiditate eius placeat, rerum quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius magni, alias, est perspiciatis tenetur maxime dolores, aspernatur optio veritatis ut et odit explicabo accusamus culpa ipsa atque vero voluptate?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut vel fugit ullam hic laboriosam beatae, ab cumque consectetur ipsum voluptate enim aliquam quidem nesciunt reprehenderit ducimus obcaecati assumenda praesentium?</div>
+    </div> -->
+    <div class="box header">
+        Header
+    </div>
+    <div class="main">
+        <div class="box sidebar-1">
+            Sidebar-1
+        </div>
+        <div class="box acticle">
+            Acticle
+        </div>
+        <div class="box sidebar-2">
+            Sidebar-2
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="box footer">
+        Footer
+    </div>
+</body>
+</html>

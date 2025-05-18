@@ -1,0 +1,15 @@
+SCSS là 1 phiên bản (phiên bản thứ 3) của SASS, khác là thêm {} và ; để phân cách
+Vd: đây là SASS
+nav
+    ul
+        margin: 0
+        padding: 0
+
+Vd: đây là scss
+ nav{
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+ }
+

@@ -1,0 +1,4 @@
+Form: Biểu mẫu thu thập thông tin
+Gồm:
+1. Thuộc tính(action, method, novalidate, autocomplete)
+2. Element(input, label, select, textarea, button,..)

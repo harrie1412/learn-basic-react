@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="newTab()">New Tab</button>
+    <button onclick="closeTab()">Close Tab</button>
+    <button onclick="reloadTab()">Close Tab</button>
+    <script>
+        let tab;
+        function newTab (){
+            tab = window.open("https://tuoitre.vn/","_blank", "width=1200, height=800, top=300, left=100")
+        }
+        function closeTab (){
+           tab.close();
+        }
+
+        let href = window.location.href; //lấy ra địa chỉ của web đang chạy
+        setTimeout(() => {
+             console.log(href);
+        },5000);
+
+        var heightScreen = window.innerHeight;
+        var widthScreen = window.innerWidth;
+        console.log(heightScreen, ",",widthScreen);
+        console.log(window.location);
+
+        function reloadTab(){
+            window.location.reload();
+        }
+        setInterval(()=>{
+            window.location.reload();
+        },5000);
+
+        console.log(window.history);
+        console.log(history.length);
+        // history.back();
+        // history.forward();
+
+        document.cookie = 'email=nguyenha2005010@gmail.com';
+        function setCookie(cname, cvalue, exdays){
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function updateCookie(){
+            document.cookie = 'name=Tấn Đạt';
+        }
+        function deleteCookie(name){
+            document.cookie = '${name}=;expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        }
+        function deleteCookies(){
+            document.cookie='name=;expires=Thu,01 Jan 1970 00:00:00 UTC';
+        }
+        function getCookie(cname){
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i<ca.length;i++){
+                var c = ca[i];
+                while(c.charAt(0) == ' '){
+                    c = c.substring(1);
+                }
+                if(c.indexOf(name) == 0){
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        setCookie("name", "Khánh Hà", 1);
+        var allCookie = document.cookie;
+        console.log(allCookie);
+        var get = getCookie("name");
+        console.log(get);
+    </script>
+</body>
+</html>

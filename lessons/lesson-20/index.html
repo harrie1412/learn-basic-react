@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .list{
+            list-style-type: none;
+            display: inline-block;
+            margin: 0;
+            height: 100vh;
+            position: relative;
+            background-color: coral;
+            padding: 20px 30px;
+        }
+        .nav{
+            display: none;
+        }
+        .open{
+            position: absolute;
+            right:0;
+        }
+        .close{
+            position: absolute;
+            top: 0;
+            left: 110px;
+        }
+        .list li{
+            padding: 10px 0;
+        }
+        .list li:hover{
+            background-color: aliceblue;
+        }
+        .nav.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // window.onload = function(){
+        //     var box = document.querySelector("ul");
+        //     console.log(box);
+        // };
+    </script>
+    <!-- <ul>
+        <li>Đây là nội dung thẻ li</li>
+        <li>Đây là nội dung thẻ li</li>
+        <li>Đây là nội dung thẻ li</li>
+    </ul>
+    <input type="text" placeholder="Nguyễn Văn A"> -->
+    <button class="open" id="open">Mở</button>
+    <nav class="nav">
+        <ul class="list">
+            <button class="close">Đóng</button>
+            <li>HOME</li>
+            <li>NAVIGATION</li>
+            <li>FOOTER</li>
+        </ul>
+    </nav>
+    <select name="items" id="items">
+        <option value="yellow">yellow</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+    </select>
+    <input type="text" class="input">
+    <button class="listen">Listen</button>
+    <script>
+        // var input = document.querySelector("input");
+        // input.onblur = function(){
+        //     input.style.backgroundColor="yellow";
+        //     input.value = input.value.toUpperCase();
+        //     input.classList.remove("blue");
+        //     input.classList.add("red");
+        // }
+        // input.onfocus = function(){
+        //     input.classList.add("blue");
+        // }
+    </script>
+
+    <script>
+        // var input = document.querySelector("input");
+        // input.onkeydown = function(){
+        //     alert("Đây là onkeydown");
+        // }
+        // input.onkeyup = function(){
+        //     alert("Đây là onkeyup");
+        // }
+    </script>
+
+    <script>
+        // var nav = document.querySelector(".nav");
+        // var open = document.querySelector(".open");
+        // var close = document.querySelector(".close");
+        // open.onclick = function(){
+        //     nav.classList.add("show");
+        // }
+        // close.onclick = function(){
+        //     nav.classList.remove("show");
+        // }
+    </script>
+
+    <script>
+        // var items = document.querySelector("#items");
+        // items.onchange = function(){
+        //     let item = items.value;
+        //     console.log(item);
+        // }
+    </script>
+
+    <script>
+        // var items = document.querySelector(".input");
+        // items.onchange = function(){
+        //     let item = items.value;
+        //     console.log(item);
+        // }
+    </script>
+    <script>
+        function event1(){
+            console.log("Event 1");
+        }
+        function event2(){
+            console.log("Event 2");
+        }
+        var listen = document.querySelector(".listen");
+        // listen.onclick = function(){
+        //     event1();
+        // }
+        // listen.onclick = function(){
+        //     event2();
+        // }
+        // listen.addEventListener("click",function(){
+        //     event1();
+        //     event2();
+        // });
+        // listen.addEventListener("click",event1);
+        listen.addEventListener("click",event2);
+        setTimeout(()=>{
+            listen.removeEventListener("click",event2);
+        },3000);
+    </script>
+</body>
+</html>

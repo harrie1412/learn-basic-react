@@ -1,0 +1,16 @@
+* Hiển thị đầy đủ thông tin history:
+window.history;
+
+* Hiển thị số trang đã truy cập trên thẻ
+history.length;
+
+* Quay lại trang trước đó đã truy cập
+history.back();
+
+* Quay lại trang sau đã truy cập
+history.forward();
+
+* Quay lại trang thứ i đã truy cập
+history.go(i);
+    1. i dương: trang sau
+    2. i âm: trang trước đó

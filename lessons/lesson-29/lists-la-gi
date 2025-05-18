@@ -1,0 +1,17 @@
+Ví dụ 1: Từ một mảng menu in ra giao diện
+const arrayMenu = [
+    "Trang chủ",
+    "Sản phẩm",
+    "Tin tức",
+    "Giới thiệu",
+    "Liên hệ",
+  ];
+Ví dụ 2: Truyền props từ component cha là ProductList/index.js vào component con là ProductItem.js
+Ví dụ 3: List dạng lồng nhau. Có một mảng country, trong mảng country có mảng con là city. Lặp qua từng phần tử của mảng country, sau đấy lặp qua từng phần tử của mảng city và vẽ ra giao diện.
+(Ví dụ sẽ demo trong buổi học)
+
+
+=> Chủ yếu dùng .map()
+=> Component chứa component
+=> sử dụng data hoặc data từ api gửi về để tạo html.
+=> Chia thêm folder ở component và import vào file index.js của folder đó.

@@ -1,0 +1,50 @@
+1. onload: Khi trình duyệt đã load xong mọi thứ (image, js, css) thì những đoạn code nằm bên trong đó mới được chạy.
+    Vd:
+    ;window.onload = function(){
+    ;     var box = document.querySelector("ul");
+    ;     console.log(box);
+    ;     };
+
+2. onblur: Kích hoạt khi một phần tử mất trọng tâm (không được focus vào nữa)
+    Vd:
+    ; var input = document.querySelector("input");
+    ;     input.onblur = function(){
+    ;         input.style.backgroundColor="yellow";
+    ;         input.value = input.value.toUpperCase();
+    ;         input.classList.remove("blue");
+    ;         input.classList.add("red");
+    ;     }
+3. onfocus: Kích hoạt khi một phần tử hiển thị đúng trọng tâm (được focus vào)
+    Vd:
+    ; input.onfocus = function(){
+    ;         input.classList.add("blue");
+    ;     }
+4. onkeydown: Kích hoạt khi một phím được nhấn, thực hiện hành động trong function trước rồi mới đưa phím ra ngoài
+    Vd:
+    ; var input = document.querySelector("input");
+    ;     input.onkeydown = function(){
+    ;         alert("Đây là onkeydown");
+    ;     }
+5. onkeyup: Kích hoạt khi một phím được nhả ra, thực hiện hành động trong function sau khi đưa phím ra ngoài
+    Vd:
+    ; input.onkeyup = function(){
+    ;         alert("Đây là onkeyup");
+    ;     }
+6. onclick: Kích hoạt trên con chuột vừa nhấn vào phần tử
+    Vd:
+    ; var nav = document.querySelector(".nav");
+    ;     var open = document.querySelector(".open");
+    ;     var close = document.querySelector(".close");
+    ;     open.onclick = function(){
+    ;         nav.classList.add("show");
+    ;     }
+    ;     close.onclick = function(){
+    ;         nav.classList.remove("show");
+    ;     }
+7. onchange: Kích hoạt khi giá trị được thay đổi khác đi so với giá trị trước đó
+    Vd:
+    ; var items = document.querySelector("#items");
+    ;     items.onchange = function(){
+    ;         let item = items.value;
+    ;         console.log(item);
+    ;     }

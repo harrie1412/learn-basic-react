@@ -1,0 +1,44 @@
+* Lấy nội dung
+1. document.querySelector("thẻ").innerHTML; : Lấy nội dung text( > nội dung </) từ thẻ
+    Vd:
+    <!-- var box = document.querySelector("h1");
+        console.log(box);
+        textHTML = box.innerHTML;
+        console.log(textHTML);//nội dung h1 -->
+2. document.querySelector("thẻ").innerText; : Lấy text, bỏ khoảng cách, mất tên thẻ
+    Vd:
+    <!-- var textContent = box.textContent;//mất tên thẻ, giữ nguyên khoảng cách
+        console.log(textContent); -->
+3. document.querySelector("thẻ").textContent; : Lấy text, giữ khoảng cách, mất tên thẻ
+    Vd:
+    <!-- var innerText = box.innerText;
+        console.log(innerText); //thu hẹp khoảng cách, mất tên thẻ -->
+4. Thay đổi nội dung
+    Vd:
+    <!-- var box = document.querySelector("h2");
+        var textHTML = box.innerHTML = "text mới của h2";
+        console.log(textHTML); -->
+
+* Lấy thuộc tính:
+1. document.querySelector.getAttribute("ten-thuoc-tinh"); :Lấy thuộc tính của thẻ
+Vd: với document.querySelector
+    <!-- var item = document.querySelector("h2");
+        console.log(item.getAttribute("type-id")); -->
+Vd: với document.querySelectorAll
+    <!-- var list = document.querySelectorAll(".box");
+        console.log(list);// vì là mảng box nên phải dùng forEach
+        [...list].forEach(item => {
+            var attr = item.getAttribute("box-id");
+            console.log(attr);
+        }); -->
+
+2. document.querySelector.setAttribute("ten-thuoc-tinh", "giá trị");
+    Vd:
+    <!-- var list = document.querySelectorAll(".box");
+        console.log(list);// vì là mảng box nên phải dùng forEach
+        [...list].forEach(item => {
+            item.setAttribute("box-id", "001-b");
+            console.log(item);
+        }); -->
+
+    

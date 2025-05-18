@@ -1,0 +1,61 @@
+* forEach(): duyệt qua các phần tử của mảng và thực hiện 1 hành động tác động lên mảng hiện tại, không trả ra j
+-Cú pháp :
+arr.forEach(function(currentValue, index, array){
+    //code
+});
+- currentValue: giá trị hiện tại
+- index: vị trí thứ của giá trị đang xét
+- array: mảng đang xét
+
+* map(): như forEach, nhưng trả ra 1 mảng mới phụ thuộc số phần tử khi return
+-Cú pháp :
+arr.map(function(currentValue, index, array){
+    //code
+});
+- currentValue: giá trị hiện tại
+- index: vị trí thứ của giá trị đang xét
+- array: mảng đang xét
+
+
+* every(): kiểm tra "tất cả" các phần tử của mảng có thỏa mãn điều kiện
+- Cú pháp:
+arr.every(function(currentValue, index, array){
+    //code
+    return ..;
+});
+- trả ra true: nếu tất cả đều đúng điều kiện
+- trả ra false: nếu 1 trong tất không thỏa
+
+* some(): ngược lại every, chỉ cần thỏa 1 phàn tử trong tất
+- Cú pháp:
+arr.some(function(currentValue, index, array){
+    //code
+    return ..;
+});
+
+* find(): tìm có giá trị nào bằng gtri cần tìm, có thì trả ra gtri đó, không thì undefine. Chỉ tìm phtu đầu tiên
+- Cú pháp:
+arr.find(function(currentValue, index, array){
+    //code
+    return ..;
+});
+
+* filter(): giống find. Cho phép tìm nhiều phần tử
+- Cú pháp:
+arr.filter(function(currentValue, index, array){
+    //code
+    return ..;
+});
+
+* reduce(): cộng dồn
+-Cú pháp:
+
+arr.reduce((total,item,index,array)=>{
+    return...;
+})
+
+    Ví dụ:
+    var reduce = list.reduce((total,item,index,array)=>{
+        return total + item.age/list.length;
+        },0);
+    console.log(reduce);

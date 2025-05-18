@@ -1,0 +1,13 @@
+@mixin
+Tương tự @extend nhưng @mixin có thể truyền đối số vào được.
+Sử dụng trong trường hợp styles động, để truyền tham số vào.
+Cú pháp:
+@mixin mixin_name(danh_sach_tham_so) {
+    // Code
+}
+@include
+Dùng để gọi @mixin
+Cú pháp: @include mixin_name;
+
+* Khi nào dùng? Khi đoạn css có cấu trúc giống nhau nhưng khác value(đối số)
+* Khác với extend: là css mixin được ghi thẳng vào trong select(css) include vào

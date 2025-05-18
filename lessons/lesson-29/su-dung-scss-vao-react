@@ -1,0 +1,5 @@
+Các bước sử dụng SCSS trong ReactJS:
+Bước 1: Gõ lệnh npm i sass (Link trang NPM: https://www.npmjs.com/package/sass) để cài SASS cho project và chỉ cần cài 1 lần duy nhất cho project.
+Bước 2: Tạo 1 file SCSS ở cùng cấp với component.
+Bước 3: Nhúng file SCSS đó vào trong component bằng cú pháp: import "./TenFile.scss";
+Ví dụ: Vẫn ví dụ trên nhưng code bằng SCSS.

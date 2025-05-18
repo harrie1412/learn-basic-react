@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test array năng cao</title>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,3,4,5];
+        // numbers.forEach(function(currentValue, index, array){
+        //     numbers[index]=currentValue+1;
+        //     currentValue =0;
+        //     //muốn thay đổi value thật của mảng thì phải gọi tên mảng... vì currentValue chỉ là biến hình thức chứa value của key
+        //     console.log(currentValue, index, array);
+        // });
+
+        // var reduce = numbers.reduce((total, currentValue, index, array)=>{
+        //     return total + currentValue;
+        // }, 0);
+        // console.log(reduce);
+        // var tong = numbers.reduce((total, currentValue, index, array)=>{
+        //     return total + currentValue;
+        // }, 0);
+        // console.log(reduce);
+
+
+        var list = [
+            {
+                name: "Hà",
+                age: 18
+            },
+            {
+                name: "Huy",
+                age: 19
+            },
+            {
+                name: "Hương",
+                age: 16
+            }
+        ];
+
+        // var check = list.every(function(item){
+        //     return item.age < 19.5;
+        // })
+        // if(check){
+        //     console.log("Đủ tuổi bầu cử");
+        // }
+        // else console.log("Chưa đủ tuổi bầu cử");
+
+        // var check1 = list.some(function(index){
+        //     return index.age < 19;
+        // });
+        // console.log(check1);
+
+        // var check2 = list.find(function(index){
+        //     return index.age == 19;
+        // });
+        // console.log(check2);
+        // console.log(check2.age);
+
+        // var check3 = list.filter(function(index){
+        //     return index.age == 19;
+        // });
+        // console.log(check3);
+
+        // var map = list.map((item,index,array)=>{
+        //     let check4 = "";
+        //     if(item.age <=18) check4="Trẻ em";
+        //     else check4="Người lớn";
+        //     return {
+        //         name: item.name,
+        //         doTuoi: check4
+        //     }
+        // });
+        // console.log(map);
+
+
+
+        // var reduce = list.reduce((total,item,index,array)=>{
+        //     return total + item.age/list.length;
+        // },0);
+        // console.log(reduce);
+    </script>
+</body>
+</html>

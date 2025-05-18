@@ -1,0 +1,32 @@
+* background-size:
+1. contain: giúp ảnh không bể và duy trì kích thước
+2. cover: cắt ảnh sao cho phù hợp kích thước
+
+*  background-origin: dùng cho hình ảnh
+1. border-box: hình ảnh bao gồm cả border
+2. content-box: hình ảnh nằm trong vùng content
+3. padding-box: nằm trong vùng padding
+
+* background-clip: dùng cho màu sắc
+1. border-box
+2. content-box
+3. padding-box
+
+* background-color: dùng gardient (linearGradient) và đơn sắc
+
+* background-repeat
+1. repeat-x, repeat-y
+2.no-repeat
+
+* background-position
+1. top left
+2.
+3.
+4.
+
+* background-attackment: fixed (cố định background khi scroll)
+
+* background-image: url
+
+
+

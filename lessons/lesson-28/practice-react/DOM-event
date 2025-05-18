@@ -1,0 +1,12 @@
+* onSubmit: dùng trong form, khi nhấn vào button
+<!-- <div className="box">
+            <div>NavigationMenu</div>
+            <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="Nguyen Van A" onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur}></input>
+                <br></br>
+                <button onClick={handleClick}>
+                Click Me
+                </button>
+            </form>
+        </div> -->
+- Bổ trợ: item.preventDefault(); : giúp không loat lại trang khi ấn button trong onSubmit

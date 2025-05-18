@@ -1,0 +1,10 @@
+1. thẻ.style.ten-thuoc-tinh="giá trị"; : tạo thêm css trong inline
+    Vd:
+// var box = document.querySelector("h1");
+//         box.style.backgroundColor="yellow";
+//         box.style.color="red";
+
+2. thẻ. style.ten-thuoc-tinh; : Lấy giá trị ra
+    Vd:
+        // var color = box.style.backgroundColor;
+        // console.log(color);

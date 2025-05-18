@@ -1,0 +1,13 @@
+* Kiểu Object:
+    1. Object là kiểu dữ liệu tham chiếu. Có thể hiểu object là một tập hợp gồm các cặp key - value (khóa - giá trị).
+    2. Kiểu dữ liệu của key có thể là string hoặc symbol.
+    3. Value ứng với key có thể là bất kỳ kiểu dữ liệu nào.
+    4. Có 2 loại là Object và Array.
+    5. Ví dụ về Array
+	var listUser = [
+	   "Le Van A",
+	   "Nguyen Thi B",
+	   "Do Van C"
+	]
+	console.log(listUser);
+	console.log(listUser[0]);

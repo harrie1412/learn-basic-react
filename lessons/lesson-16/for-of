@@ -1,0 +1,13 @@
+// In các phần tử của mảng với list là Array, number
+
+
+var abc = [ /* list object */
+    {   name: "A",
+        a = 1
+    },
+    {   name: "B",
+        a = 2
+    },{   name: "C",
+        a = 3
+    }
+];

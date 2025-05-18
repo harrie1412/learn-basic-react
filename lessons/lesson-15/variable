@@ -1,0 +1,14 @@
+* Khai báo biến:
+Cú pháp: var tenBien = giaTri;
+Trong đó:
+tenBien: Là tên của biến các bạn muốn đặt.
+giaTri: Là giá trị của biến, có thể là số, chuỗi, mảng, object.
+Ví dụ:
+var a = 15;
+var b = 20;
+var c = a + b;
+
+* Quy tắc đặt tên biến:
+Bắt đầu phải là chữ cái hoặc ký tự '_'
+Không được bắt đầu bằng số (0 🡪 9).
+Không được bắt đầu bằng ký tự đặc biệt (ví dụ: #, %, ^, -)

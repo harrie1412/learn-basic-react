@@ -1,0 +1,18 @@
+1. Tham số mặc định cho phép các tham số mang giá trị mặc định nếu tham số không có giá trị hoặc giá trị không xác định (undefined).
+2. Hoặc có thể hiểu tham số mặc định là tham số ban đầu được gán cho function.
+3. Có 2 cách khai báo tham số mặc định: gán mặc định tại vị trí khai báo và gán bên trong function.
+- function(a=0,b=0,...):
+- function(a,b){
+    a=a||0;
+    b=b||0;
+}
+    Vd:
+    ; function sum (a=0,b=0){
+    ;         return (a+b);
+    ;     }
+    ;     function sum1(a,b){
+    ;         a=a||0;
+    ;         b=b||0;
+    ;         return (a+b);
+    ;     }
+    ;     console.log(sum1());

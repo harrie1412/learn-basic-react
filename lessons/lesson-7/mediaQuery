@@ -1,0 +1,15 @@
+* mediaType
+1. all
+2. print: dùng cho máy in
+3. screen: dùng cho máy tính và thiết bị di động
+
+* mediaFeature:
+1. max-width: cho PC first( giao diện từ lớn sang trung và bé)
+2. min-width: cho Phone first( giao diện từ bé sang trung và lớn)
+
+* Các loại thiết bị:
+1. aipad ngang 1024 x 768
+2. aipad dọc 768 x 1024
+3. smartphone 480
+4. điện thoại nhỏ 480
+

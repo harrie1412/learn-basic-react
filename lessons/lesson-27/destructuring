@@ -1,0 +1,11 @@
+* Cho phép sử dụng biến dễ dàng, ví dụ: object
+Ví dụ:
+var student = {
+            name: "Quốc Tuấn",
+            age: 17
+            }
+        console.log(student.name);
+
+        var {name, age} = student;
+        console.log(name);
+        // console.log(age);/

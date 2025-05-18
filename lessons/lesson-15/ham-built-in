@@ -1,0 +1,78 @@
+I/ Hàm xây dựng sẵn:
+    1. alert(nội dung muốn truyền);
+    2. confirm(Nội dung); trả ra true/false
+    3. prompt(Nội dung câu hỏi, giá trị mặc định);
+    4. setTimeout(function(){
+
+}, thời gian): chạy functoin sau 1 thời gian
+    5. setInterval(function(){
+
+}, time): chạy function lặp lại theo 1 khoảng thời gian
+    6. typeof + tên biến: ép ghi ra tên kiểu dữ liệu
+
+    II/ Làm việc với string
+    1. length: trả ra độ dài
+    2. chuỗi cha.indexOf(chuối cần tìm, bắt đầu từ vị trí nào): có phân biệt hoa/thường tìm chuỗi trong chuỗi
+        - có: trả vị trí
+        - không: -1
+    3. chuỗi cha.lastIndexOf(chuối cần tìm, bắt đầu từ vị trí nào)
+        - có: trả vị trí
+        - không: -1
+    4. chuỗi cha.slice(vị trí bắt đầu cắt, vị trí kết thúc cắt): trả ra 1 chuỗi mới, không ảnh hưởng chuỗi gốc
+    5. chuỗi cha.replace("Từ thay", "Từ cần thay"): chỉ thay 1 lần
+        Vd:console.log(myString.replace("Tôi","Mình"))
+    6. Thay thé nhiều lần: Regular XPathExpression()
+        Vd: console.log(myString.replace(/Tôi/g,"Mình"))
+    7. chuỗi cha.toUpperCase()
+    8. chuỗi cha.toLowerCase()
+    9. chuỗi cha.trim(): cắt bỏ khoảng trắng 2 lề của chuỗi
+    10. chuỗi cha.chartArt(vị trí cần lấy kí tự): lấy kí tự từ vị trí kí tự trong chuỗi
+    11. chuỗi cha.split(): chuyển chuỗi thành các Array
+        Vd:
+        var myString = `HTML5, CSS3, Javascript`;
+	    console.log(myString.split()); // Cả string là 1 phần tử
+	    console.log(myString.split("")); // Mỗi ký tự là 1 phần tử
+	    console.log(myString.split(", ")); // Mỗi từ là 1 phần tử
+	    console.log(myString.split(", ", 2)); // Mỗi từ là 1 phần tử, lấy tối đa 2 phần tử
+
+    III/ Làm việc với Number
+    1. so.isNAN(): kiểm tra có là NaN
+    2. so.toString(): chuyển số về string
+    3. so.toFixed( tròn thập phân thứ i): trả về số làm tròn thập phân thứ i
+    
+    IV/ Làm việc với Array
+    1. ten Array.toString(): không có dấu ngăn cách
+    2. ten Array.join(): chuyển thành String và thêm dấu ngăn cách bất kỳ
+    Vd:
+        var list = ["HTML5", "CSS3", "Javascript"];
+	    console.log(list.join()); // Trả về: "HTML5,CSS3,Javascript"
+	    console.log(list.join(",")); // Trả về: "HTML5,CSS3,Javascript"
+	    console.log(list.join("")); // Trả về: "HTML5CSS3Javascript"
+	    console.log(list.join(", ")); // Trả về: "HTML5, CSS3, Javascript"
+	    console.log(list.join(" - ")); // Trả về: "HTML5 - CSS3 - Javascript"
+    3. ten Array.pop(): trả ra phần tử cuối cùng và xóa nó khỏi danh sách
+    5. ten Array.shift(): trả ra phần tử đầu mảng và xóa nó khỏi danh sách
+    4. ten Array.push(item1,item2,...): thêm 1 hoặc nhiều phần tử vào cuối list string
+    6. ten Array.unshift(item1,item2,...): thêm 1 hoặc nhiều phần tử vào đầu list string, trả về độ dài mảng
+    7. ten Array.splice(): xóa và đồng thời chèn phần tử mới vào mảng, trả về mảng bị xóa
+    Ví dụ 1: Chèn phần tử mới vào mảng
+	var list = ["HTML5", "CSS3", "Javascript"];
+	console.log(list.splice(2, 0, "Bootstrap 4", "ReactJS")); // Trả về: []
+	console.log(list);
+	; Trả về: ["HTML5", "CSS3", "Bootstrap 4", "ReactJS", "Javascript"]
+    8. ten Array.concat(): nối 2 Array
+    var list = ["HTML5", "CSS3", "Javascript"];
+	var list2 = ["Bootstrap 4", "ReactJS"];
+	console.log(list.concat(list2));
+	// Trả về: ["HTML5", "CSS3", "Javascript", "Bootstrap 4", "ReactJS"]
+	console.log(list);
+	// Trả về: ["HTML5", "CSS3", "Javascript"]
+    9. ten Array.slice(vị trí bắt đầu, vị trí kết thúc): cắt các phần tử
+    var list = ["HTML5", "CSS3", "Javascript", "Bootstrap 4", "ReactJS"];
+	console.log(list.slice(3)); // Trả về: ["Bootstrap 4", "ReactJS"]
+	console.log(list.slice(1, 3)); // Trả về: ["CSS3", "Javascript"]
+	console.log(list.slice(-3, -1)); // Trả về: ["Javascript", "Bootstrap 4"]
+	console.log(list);
+	// Trả về: ["HTML5", "CSS3", "Javascript", "Bootstrap 4", "ReactJS"]
+
+

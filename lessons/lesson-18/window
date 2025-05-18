@@ -1,0 +1,13 @@
+* Mở tab:
+var tenBienTab = window.open("url", "_blank", "width=?,height=?,top=?,left=?");
+
+* Đóng tab đã mở:
+tenBienTab.close();
+window.close();//đóng thẻ html đang mở
+* Lấy địa chỉ tab:
+window.location.href;
+
+* Lấy chiều dài, rộng của tab:
+window.innerWidth;//lấy chiều dài hiện tại của tab html
+window.innerHeight;//lấy chiều rộng hiện tại của tab html
+

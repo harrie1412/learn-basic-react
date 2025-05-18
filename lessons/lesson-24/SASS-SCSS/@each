@@ -1,0 +1,6 @@
+$colors: (red,tomato), (orange, yellow);
+@each $label,$color in $colors{
+    .button--#{$label}{
+        background-color: $color;
+    }
+}
