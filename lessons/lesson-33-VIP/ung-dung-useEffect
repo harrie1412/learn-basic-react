@@ -1,0 +1,2 @@
+- load lại trang khi cần, lod trang nào thì khai báo hàm, biến reload ở trang đó, useEffect dạng 3.
+- Thường kết hợp với useState để lấy set giá trị nhận được từ api vào biến tại lớp

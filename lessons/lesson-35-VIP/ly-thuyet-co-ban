@@ -1,0 +1,13 @@
+1. BrowserRouter: Để kết nối ứng dụng của bạn với URL của trình duyệt thì phải "import BrowserRouter" và bọc nó "bên ngoài" toàn bộ ứng dụng chính là component "App".
+
+2. Routes: Cung cấp các tuyến đường (routes) để điều hướng các thành phần của ứng dụng React. Dùng để "bọc" ở bên "ngoài" danh sách "các Route".
+
+3. Route: Được sử dụng để định nghĩa một route để "điều hướng" đến một component cụ thể.(trang trang cha blog sang con là news. Vd: .."blog/news")
+
+4. Link: Cho phép chuyển đổi giữa các "URL" khác nhau mà "không" cần phải "load lại trang" (nó tương tự như thẻ <a> trong HTML).
+
+5. Outlet: Nó dùng để xác định vị trí mà component trong route được hiển thị (Sử dụng "giống {props".children} trong React).Vd: <Outlet/>
+
+6. NavLink: Cũng "giống Link", nhưng nếu URL trùng với link của NavLink thì sẽ "thêm class là active".
+
+7. Navigate: Sử dụng Navigate để tự động "chuyển hướng" đến một "trang nào đó". Vd: <Navigate to="/path"/>

@@ -1,0 +1,5 @@
+* Index routes: "hiển thị mặc định" 1 "route con" nào đó "vào" thẻ "route cha", nhớ cần Outlet để hiển
+- Để hiển thị component ở route con ra ngoài route cha.
+- Như ví dụ ở trên thì khi truy cập vào https://domain.com/blog sẽ load component Blog và không hiển thị conponent con nào cả.
+=> Điều chúng ta mong muốn là vẫn URL như vậy nhưng vẫn hiển thị một component con nào đó ở ngay component cha.
+- Để làm được điều này ta sử dụng index và truyền component con muốn được hiển thị.

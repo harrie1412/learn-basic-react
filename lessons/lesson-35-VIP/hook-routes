@@ -1,0 +1,5 @@
+1. useParams: Dùng để lấy được tham số trên param.
+2. useNavigate: Dùng để điều hướng đến một đường dẫn khác, hoặc trở về các trang trước đó đã truy cập.
+ Vd về cách sử dụng:
+const param = useParams();
+const navigate = useNavigate(số nguyên);

@@ -1,0 +1,26 @@
+* Nested Routes: Routes lồng Route
+
+- Để tạo ra các route con lồng nhau.
+
+Ví dụ:
+https://domain.com/blog/news: Trang tin tức mới.
+https://domain.com/blog/related: Trang tin tức có liên quan.
+
+<Routes>
+        <Route path="/" element={<LayoutDefault />}>
+          <Route path="/" element={<Home />}/>
+          <Route path="about" element={<About/>}/>
+          <Route path="blog" element={<Blog/>}>
+              <Route index element={<BlogAll />}/>
+              <Route path="news" element={<BlogNews />}/>
+              <Route path="related" element={<BlogRelated />}/>
+              <Route path=":id" element={<BlogDetail />}/>
+          </Route>
+          <Route path="contact" element={<Contact />}/>
+          <Route path="*" element={<Error404 />}/>
+          <Route path="login" element={<Login />}/>
+          <Route element={<PrivateRouter/>}>
+              <Route path="info-user" element={<InfoUser />}/>
+          </Route>
+        </Route>
+      </Routes>

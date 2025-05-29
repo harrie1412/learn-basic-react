@@ -1,0 +1,2 @@
+* Service: chứa các async, await để lấy data từ API
+* Util: chứa get, post, delete, patch và đường dẫn api truyền vào service

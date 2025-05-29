@@ -1,0 +1,12 @@
+* Dynamic Routes: Dynamic routes giúp chúng ta tạo ra được các routes động.
+=> Hiểu đơn giản là tạo ra các Link với to="" cụ thể để nhảy trang
+<ul>
+            {posts.map((item) => (
+                <li key={item.id}>
+                    <Link to={"/blog/" + item.id}>// động khúc này
+                        {item.title}
+                    </Link>
+                </li>
+            ))}
+
+        </ul>

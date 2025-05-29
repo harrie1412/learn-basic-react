@@ -1,0 +1,35 @@
+.answer {
+  table {
+    width: 45%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  &__head th {
+    border: 1px solid #ddd;
+    padding: 10px 0px;
+  }
+  &__body td {
+    border: 1px solid #ddd;
+    padding: 0px 0px;
+  }
+  button {
+    margin: 4px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+    }
+  }
+  button:hover {
+    background-color: orange;
+    a {
+      color: #fff;
+    }
+  }
+}
